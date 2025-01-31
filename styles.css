@@ -1,0 +1,141 @@
+/* General Styles */
+body {
+    background-color: #FFFEFD;
+    color: #573A2D;
+    font-family: 'Arimo', sans-serif;
+    
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    padding-top: 10px;
+    padding-right: 5px;
+    padding-bottom: 15px;
+    padding-left: 5px ;
+    margin: 10px;
+    
+}
+
+.logo {
+    max-width: 250px;
+}
+
+nav > ul {
+    list-style: none;
+    padding: 0;
+   
+}
+
+nav > ul > li {
+    display: inline-block;
+
+}
+
+nav > ul > li > a {
+    padding: 0 15px;
+    color: #573A2D;
+    font-weight: 700;
+    text-transform: lowercase;
+}
+
+main h1 {
+    display: inline-block;
+    text-align: justify;
+    font-size: 70px;
+    margin: 0;
+}
+
+/* Main Section */
+main {
+    padding: 40px 20px;
+}
+
+/* Section Header */
+
+h2 {font-size: 40px;
+    text-align: justify;
+}
+
+/* Image Row */
+.image-row {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    flex-wrap: wrap; /* Ensures responsiveness on smaller screens */
+}
+
+/* Image Container */
+.image-container {
+    max-width: 300px;
+    text-align: justify;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.image-container h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: left;
+
+}
+
+.image-container p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #D4D1CB;
+    background-color: #573A2D;
+    text-decoration: none; 
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: rgb(195, 150, 92);
+}
+
+
+/* Footer */
+footer {
+    background-color: #FFFEFD;
+    padding: 40px 20px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+}
+
+footer h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+footer p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+footer a {
+    color: #573A2D;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration:underline;
+}
