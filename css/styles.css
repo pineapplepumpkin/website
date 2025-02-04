@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-    background-color: #FFFEFD;
+    background-color: #f4efe6;
     color: #573A2D;
     font-family: 'Arimo', sans-serif;
     
@@ -9,7 +9,7 @@ body {
 /* Header Styling */
 header {
     display: flex;
-    align-items: center;
+    text-align: unset;
     justify-content: space-between;
     position: sticky;
     padding-top: 10px;
@@ -48,6 +48,16 @@ main h1 {
     font-size: 70px;
     margin: 0;
 }
+
+#hero h1 {
+    display: block;
+    color: #3d2b16;
+    font-family: "Manrope", serif;
+    font-weight: 80px;
+    font-style: normal;
+     
+    }
+
 
 /* Main Section */
 main {
