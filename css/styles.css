@@ -115,11 +115,11 @@ h2 {font-size: 40px;
     margin: 0;
 }
 
-.animation {
+/* animation */
+.about-picture {
     width: 100%;
     max-width: 100%;
     height: auto;
-    animation-name: example;
     animation-duration: 4s;
 }
 
@@ -127,6 +127,15 @@ h2 {font-size: 40px;
     0% {fill: #edc655;}
     50% {fill: #fcffad;}
     100% {fill: #f76414;}
+  }
+
+.cloud-front {
+    animation: 30s cloud-move infinite alternate linear;
+  }
+
+  @keyframes cloud-move-reverse {
+    from {transform: translate(446px,48px);}
+    to {transform: translate(100px, 48px);}
   }
 
 
