@@ -9,14 +9,13 @@ body {
 /* Header Styling */
 header {
     display: flex;
+    align-items: center;
     text-align: unset;
-    justify-content: space-between;
+    justify-content: center;
     position: sticky;
-    padding-top: 10px;
-    padding-right: 5px;
-    padding-bottom: 15px;
-    padding-left: 5px ;
+    padding: 10px;
     margin: 10px;
+    gap: 20px
     
 }
 
@@ -27,6 +26,8 @@ header {
 nav > ul {
     list-style: none;
     padding: 0;
+    display: flex;
+    gap: 20px;
    
 }
 
@@ -40,6 +41,7 @@ nav > ul > li > a {
     color: #573A2D;
     font-weight: 700;
     text-transform: lowercase;
+    text-decoration: none;
 }
 
 h1 {
@@ -50,12 +52,11 @@ h1 {
 }
 
 #hero h1 {
+    display: block;
     color: #3d2b16;
     font-family: "Manrope", serif;
     font-size: 80px;
-    letter-spacing: -1px;
-    word-spacing: -5px;
-    font-weight: 90px;
+    letter-spacing: -3px;
     font-style: normal;
     padding-left: 150px;
     padding-right: 150px;
@@ -91,6 +92,7 @@ h2 {font-size: 40px;
 }
 
 .image-container img {
+    flex: 1;
     width: 100%;
     height: auto;
     border-radius: 8px;
@@ -98,6 +100,7 @@ h2 {font-size: 40px;
 }
 
 .image-container h3 {
+    flex: 1;
     font-size: 18px;
     margin-bottom: 10px;
     font-weight: bold;
@@ -106,24 +109,88 @@ h2 {font-size: 40px;
 }
 
 .image-container p {
+    flex: 1;
     font-size: 14px;
     line-height: 1.6;
     margin: 0;
 }
 
+.animation {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    animation-name: example;
+    animation-duration: 4s;
+}
+
+@keyframes color-change {
+    0% {fill: #edc655;}
+    50% {fill: #fcffad;}
+    100% {fill: #f76414;}
+  }
+
+
+
 .button {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 10px 10px;
     font-size: 16px;
     color: #D4D1CB;
     background-color: #573A2D;
     text-decoration: none; 
-    border-radius: 5px;
+    border-radius: 3px;
+    border-bottom: 2px solid #4a7766;
+    transition-duration: 0.2s;
+    transition-property: opacity;
 }
 
 .button:hover {
     background-color: #92736c;
     color: #fdf1f5;
+    opacity: 0.8;
+}
+
+/* about me page*/
+
+
+.avatar {
+    float: left;
+    padding-right: 30px;
+}
+
+.me {
+    display: inline-block;
+    text-align: justify;
+}
+
+.skills-tools {
+    display: flex;
+    gap: 20px;
+}
+
+.skills, .tools {
+    flex: 1;
+    padding: 5px;
+}
+
+.values {
+    float: right;
+    display: block;
+    text-align: justify;
+    padding-top: 100px;
+    padding-right: 20px;
+}
+
+.values h2 {
+    text-align: right;
+    font-size: 32px;
+}
+
+.commitment {
+    display: block;
+    text-align: justify;
+    
+
 }
 
 
@@ -156,4 +223,69 @@ footer a {
 footer a:hover {
     text-decoration:underline;
     color: #4a7766
+}
+
+
+/* Medium Screens (Tablets, 768px and up) */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column; /* Stack items vertically */
+        text-align: left;
+    }
+
+    .logo {
+        max-width: 200px; /* Reduce logo size */
+    }
+
+    nav > ul {
+        text-align: center;
+    }
+
+    nav > ul > li {
+        display: block; /* Stack nav links */
+        padding: 5px 0;
+    }
+
+    h1 {
+        font-size: 40px; /* Reduce heading size */
+    }
+
+    #hero h1 {
+        font-size: 45px; /* Adjust hero text */
+        padding: 50px 20px; /* Reduce padding */
+    }
+
+    .image-row {
+        gap: 50px; /* Reduce gap between images */
+    }
+
+    .image-container {
+        max-width: 300px; /* Adjust image container */
+    }
+}
+
+/* Large Screens (Desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1100px; /* Limit content width */
+        margin: 0 auto; /* Center content */
+    }
+
+    h1 {
+        font-size: 60px; /* Increase heading size */
+    }
+
+    #hero h1 {
+        font-size: 90px; /* Larger hero text */
+       
+    }
+
+    .image-row {
+        gap: 120px; /* Increase space between images */
+    }
+
+    .button {
+        font-size: 18px; /* Make buttons larger */
+        padding: 12px 24px;
+    }
 }
