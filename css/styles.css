@@ -129,7 +129,7 @@ h2 {font-size: 40px;
     100% {fill: #f76414;}
   }
 
-.cloud-front {
+.animation {
     animation: 30s cloud-move infinite alternate linear;
   }
 
