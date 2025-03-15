@@ -1,9 +1,8 @@
 /* General Styles */
-body {
+bbody {
     background-color: #fdf9f1;
     color: #573A2D;
     font-family: 'Arimo', sans-serif;
-    
 }
 
 /* Header Styling */
@@ -15,8 +14,7 @@ header {
     position: sticky;
     padding: 10px;
     margin: 10px;
-    gap: 20px
-    
+    gap: 20px;
 }
 
 .logo {
@@ -28,12 +26,6 @@ nav > ul {
     padding: 0;
     display: flex;
     gap: 20px;
-   
-}
-
-nav > ul > li {
-    display: inline-block;
-
 }
 
 nav > ul > li > a {
@@ -43,6 +35,38 @@ nav > ul > li > a {
     text-transform: lowercase;
     text-decoration: none;
 }
+
+.navtoggle.responsive ul {
+    display: block;
+    padding: 24px 0 0;
+}
+
+.navtoggle.responsive li {
+    display: block;
+    padding: 10px 0;
+    border-top: 1px solid rgba(255, 127, 80, 0.5);
+}
+
+.navtoggle.responsive li:last-child {
+    padding: 0 0 10px;
+}
+
+.navtoggle.responsive nav {
+    padding: 24px 0 0;
+}
+
+.navtoggle, .navtoggle.responsive {
+    position: relative;
+} 
+
+.navtoggle li .icon {
+    position: absolute;
+    right: 0;
+    top: 2px;
+    font-size: 20px;
+    padding-right: 0;
+  }
+
 
 h1 {
     display: inline-block;
@@ -114,30 +138,6 @@ h2 {font-size: 40px;
     line-height: 1.6;
     margin: 0;
 }
-
-/* animation */
-.about-picture {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    animation-duration: 4s;
-}
-
-@keyframes color-change {
-    0% {fill: #edc655;}
-    50% {fill: #fcffad;}
-    100% {fill: #f76414;}
-  }
-
-.animation {
-    animation: 30s cloud-move infinite alternate linear;
-  }
-
-  @keyframes cloud-move-reverse {
-    from {transform: translate(446px,48px);}
-    to {transform: translate(100px, 48px);}
-  }
-
 
 
 .button {
@@ -235,8 +235,8 @@ footer a:hover {
 }
 
 
-/* Medium Screens (Tablets, 768px and up) */
-@media screen and (max-width: 768px) {
+
+@media screen and (min-width: 641px) {
     header {
         flex-direction: column; /* Stack items vertically */
         text-align: left;
@@ -247,12 +247,20 @@ footer a:hover {
     }
 
     nav > ul {
-        text-align: center;
+        margin: 1em 0;
     }
 
     nav > ul > li {
-        display: block; /* Stack nav links */
+        display: inline-block;
         padding: 5px 0;
+    }
+
+    .navtoggle li:not(:last-child) {
+        display: inline-block;
+    }
+
+    .navtoggle li:last-child {
+        display: none;
     }
 
     h1 {

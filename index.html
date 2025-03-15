@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Catherine Abraham</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Alatsi&family=Arimo:ital,wght@0,400..700;1,400..700&family=Manrope:wght@200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-        <link href="css/styles.css" rel="stylesheet" type="text/css"/>
-    </head>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Catherine Abraham</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alatsi&family=Arimo:ital,wght@0,400..700;1,400..700&family=Manrope:wght@200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet" type="text/css"/>
+</head>
 <body>
     <header>
-        <a href="index.html">
-            <img class="logo" src="img/transparentlogo.png" alt="Catherinelogo"> 
-        </a>
-        <nav>
-            <ul>
-                <li><a href="index.html">Work</a></li>
-                <li><a href="aboutme.html">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <div class="navtoggle" id="myNavtoggle">
+                <img class="logo" src="img/transparentlogo.png" alt="web logo">
+                <nav>
+                    <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+                    <ul id="menu" class="nav-items">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="aboutme.html">About me</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                
+                
     </header>
 
     <main>
@@ -670,6 +671,7 @@
     </main>
 
 <!--Contact-->
+<div>
 <footer id="contact">
     <div class="container">
         <h2>Let's Chat!</h2>
@@ -682,6 +684,6 @@
     </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
-
+</div>
 </body>
 </html>
