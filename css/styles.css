@@ -206,6 +206,15 @@ h2 {font-size: 40px;
 
 }
 
+.beanbuddy-page main {
+    text-align: center;
+}
+
+.beanbuddy-page main div {
+    display: flex;
+    justify-content: center;
+}
+
 
 /* Footer */
 footer {
