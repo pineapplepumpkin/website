@@ -5,7 +5,7 @@
     <title>Catherine Abraham</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alatsi&family=Arimo:ital,wght@0,400..700;1,400..700&family=Manrope:wght@200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alatsi&family=Arimo:ital,wght@0,400..700;1,400..700&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet" type="text/css"/>
     <script src="https://kit.fontawesome.com/68160408ab.js" crossorigin="anonymous"></script>
 </head>
@@ -13,107 +13,92 @@
     <header>
         <div class="nav-container">
             <a href="index.html">
-            <img class="logo" src="img/logo-2.png" alt="web logo">
+                <img class="logo" src="img/logo-2.png" alt="web logo">
             </a>
-          <div class="navtoggle" id="myNavtoggle">
-            <nav>
-              <ul id="menu" class="nav-items">
-                <li><a href="index.html">home</a></li>
-                <li><a href="#work">my work</a></li>
-                <li><a href="aboutme.html">about me</a></li>
-                <li><a href="#contact">contact</a></li>
-                <li>
-                  <a href="javascript:void(0);" class="icon" onclick="menuToggle()">
-                    <i class="fas fa-bars"></i>
-                  </a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-      </header>
-
-    <main>
-        <div>
-            <div>
-                <h1>about me</h1>
+            <div class="navtoggle" id="myNavtoggle">
+                <nav>
+                    <ul id="menu" class="nav-items">
+                        <li><a href="index.html">home</a></li>
+                        <li><a href="index.html#work">my work</a></li>
+                        <li><a href="aboutme.html">about me</a></li>
+                        <li><a href="#contact">contact</a></li>
+                        <li>
+                            <a href="javascript:void(0);" class="icon" onclick="menuToggle()">
+                                <i class="fas fa-bars"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
         </div>
-        
-        <div>
-            <div class="avatar">
-                <img src="img/Avatar.png" alt="webavatar" width="400">
-                </div>
-                <div class="me">
-                <h2>thoughtful </h2>
-                <h2>useful</h2>
-                <h2>practical</h2>
-                    <br>
-                   <h3> When I'm not creating experiences for users, <br>
-                    you can find me reading manga or 
-                    rewatching Criminal Minds</p>
-                    Here's a full look at what I've been up to. 
-                    <br>
-                    <br>
-                    <a href="pdf/portfolioCV.pdf" target="_blank" download class="button">My CV</a>
-                    </div>
-                    <div>
-                        
-                        <h2>skills and tools</h2>
-                        <div class="skills-tools">
-                            <div class="skills">
-                        <h3>skills</h3>
+    </header>
+
+    <main>
+        <section id="about">
+            <div id="ab-left">
+                <h1 class="meet">UX designer</h1>
+            </div>
+            <div id="aboutright">
+                <img src="img/Avatar.png" alt="avatar" id="avatar">
+            </div>
+        </section>
+
+        <div class="container">
+            <section id="story" class="text">
+                <h2>Who I am</h2>
+                <p>
+                    Hi there! I'm a Cat. I'm a UX designer and researcher. My goal when designing is to
+                    create experiences that are user-focused. User research and usability testing is my 'happy place';
+                    getting to talk to users and really dig into what their needs, wants, and goals are is my favourite part
+                    of the process. I’m committed to continuous growth and delivering work that meets the highest 
+                    standards. Whether zooming out to align with broader strategies or diving deep 
+                    into the nuances, I approach every project holistically and cross-functionally. 
+                    I’d like my work to connect to a deeper purpose—improving lives and leaving the world 
+                    better than I found it.
+                </p>
+                <a href="pdf/portfolioCV.pdf" class="primary-button" target="_blank">My CV</a>
+            </section>
+
+            <section id="skills-tools" class="text">
+                <h2>Skills & Tools</h2>
+                <div class="skills-tools">
+                    <div class="skills">
+                        <h3>Relevant Skills</h3>
                         <ul>
-                            <li>UX Research</li>
-                            <li>Wireframing</li>
-                            <li>Protoyping</li>  
+                            <li>User Research</li>
+                            <li>User Flows</li>
+                            <li>Prototyping</li>
+                            <li>Usability Testing</li>
+                            <li>Style Guides & Basic UI</li>
+                            <li>Basic Frontend Dev</li>
                         </ul>
                     </div>
                     <div class="tools">
-                        <h3>tools</h3>
+                        <h3>Tools</h3>
                         <ul>
                             <li>Figma</li>
                             <li>Miro</li>
-                            <li>Adobe Illustrator</li>    
+                            <li>Adobe Illustrator</li>
+                            <li>Visual Studio Code</li>
                         </ul>
-                        <div class="values">
-                            <h2>my design philosophy</h2>
-                            <p>I would like my work to be guided by a commitment to inclusivity and 
-                                accessibility. In the most ideal sense, I think being a good designer 
-                                comes from empathy driven problem solving. In a practical sense, it may 
-                                not always be possible - trying to find the best balance of user focused
-                                problem solving and business feasibility is the most realistic. Projects
-                                that focus on accessibility, inclusivity and harm mitigation would be my
-                                priority. </p>
-                          <div class="commitment">
-                            <p>I’m committed to continuous growth and delivering work that meets the highest 
-                                standards. Whether zooming out to align with broader strategies or diving deep 
-                                into the nuances, I would approach every project holistically and cross-functionally. 
-                                I’d like my work to connect to a deeper purpose—improving lives and leaving the world 
-                                better than I found it.
-                            </p>
-
-                          </div>     
-                        </div> 
                     </div>
                 </div>
-            </div>       
-                          
-</div>
-</main>
-
-<!--Contact-->
-<footer id="contact">
-    <div>
-        <h2>Let's Chat!</h2>
-        <p>If you'd like to get in touch, drop me a line</p>
-        <a href="mailto:catherineabraham2@gmail.com">Send Me An Email</a>
-    </div>
-    <div>
-        <p>Copyright Catherine Abraham 2024-2025</p>
-    </div>
+            </section>
+        </div>
+    </main>
+    
+    <footer id="contact">
+        <div>
+            <h2>Let's Chat!</h2>
+            <p>If you'd like to get in touch, drop me a line</p>
+            <a href="mailto:catherineabraham2@gmail.com">Send Me An Email</a>
+        </div>
+        <div>
+            <p>Copyright Catherine Abraham 2024-2025</p>
+        </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
 </body>
 </html>
