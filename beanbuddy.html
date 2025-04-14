@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,35 +11,41 @@
 </head>
 <body>
     <header>
-        <div class="container">
-            <div class="navtoggle" id="myNavtoggle">
-                <img class="logo" src="img/transparentlogo.png" alt="web logo">
-                <nav>
-                    
-                    <ul id="menu" class="nav-items">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="aboutme.html">About me</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                        <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
-         </ul>
-        </nav>
+        <div class="nav-container">
+            <a href="index.html">
+                <img class="logo" src="img/logo-2.png" alt="web logo">
+            </a>
+          <div class="navtoggle" id="myNavtoggle">
+            <nav>
+              <ul id="menu" class="nav-items">
+                <li><a href="index.html">home</a></li>
+                <li><a href="#work">my work</a></li>
+                <li><a href="aboutme.html">about me</a></li>
+                <li><a href="#contact">contact</a></li>
+                <li>
+                  <a href="javascript:void(0);" class="icon" onclick="menuToggle()">
+                    <i class="fas fa-bars"></i>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
         </div>
-        </div>               
+      </header>
 
-    </header>
-
-    <main>
-        <body class="beanbuddy-page">
-
+    <main class="beanbuddy-page">
         <h1>Bean Buddy</h1>
+        <br>
+        <br>
+
         <div>
-        <img src="img/projectthumbnail_1200.png" alt="beanbuddythumbnail" width="1200">
+            <img src="img/projectthumbnail_1200.png" alt="beanbuddythumbnail" width="1200">
         </div>
         <div>
             <img src="img/Behance/2.png" alt="beanbuddyintro" width="1200">
         </div>
         <div>
-            <img src="img/Behance/3.png" alt="beanbudycontent1" width="1200">
+            <img src="img/Behance/3.png" alt="beanbuddycontent1" width="1200">
         </div>
         <div>
             <img src="img/Behance/4.png" alt="beanbuddycontent2" width="1200">
@@ -68,19 +74,20 @@
         <div>
             <img src="img/Behance/12.png" alt="beanbuddycontent10" width="1200">
         </div>
-        </main>    
-        
-<!--Contact-->
-<footer id="contact">
-    <div>
-        <h2>Let's Chat!</h2>
-        <p>If you'd like to get in touch, drop me a line</p>
-        <a href="mailto:catherineabraham2@gmail.com">Send Me An Email</a>
-    </div>
-    <div>
-        <p>Copyright Catherine Abraham 2024-2025</p>
-    </div>
+    </main>
+
+    <!-- Contact -->
+    <footer id="contact">
+        <div>
+            <h2>Let's Chat!</h2>
+            <p>If you'd like to get in touch, drop me a line</p>
+            <a href="mailto:catherineabraham2@gmail.com">Send Me An Email</a>
+        </div>
+        <div>
+            <p>&copy; Catherine Abraham 2024–2025</p>
+        </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
 </body>
 </html>
-
